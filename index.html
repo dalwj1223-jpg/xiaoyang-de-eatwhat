@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EAT - 帮我选</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="artboard" id="artboard" aria-label="Frame 14 设计稿">
+    <object id="artwork" data="frame-14-animated.svg?v=4" type="image/svg+xml" aria-label="Frame 14"></object>
+    <span class="state-overlay middle-cleaner" aria-hidden="true"></span>
+    <img class="state-overlay option-one-selected" id="optionOneGraphic" src="option-1.svg?v=1" alt="随便吃点，选中">
+    <img class="state-overlay option-two-unselected" src="option-2-correct.svg?v=1" alt="正在纠结，未选中">
+    <img class="state-overlay option-three-selected" id="optionThreeGraphic" src="option-3.svg?v=1" alt="整点好的，选中">
+    <span class="third-cleaner" aria-hidden="true"></span>
+    <img class="option-three-unselected-restore" src="option-3-unselected.png?v=1" alt="整点好的，未选中">
+    <button class="choice-hitbox choice-one-hitbox" id="selectCasual" type="button" aria-label="选择随便吃点" aria-pressed="false"></button>
+    <button class="choice-hitbox choice-two-hitbox" id="selectThinking" type="button" aria-label="选择正在纠结" aria-pressed="true"></button>
+    <button class="choice-hitbox choice-three-hitbox" id="selectBetter" type="button" aria-label="选择整点好的" aria-pressed="false"></button>
+    <button class="submit-hitbox" id="submitChoice" type="button" aria-label="帮我选"></button>
+    <span class="counter-badge home-counter shared-counter" aria-hidden="true">9</span>
+    <p class="chance-hint" id="chanceHint">快点选好吃饭吧，还有9次机会哦</p>
+    <object class="reselect-page" id="reselectPage" data="result-reselect.svg?v=1" type="image/svg+xml" aria-label="重新选择"></object>
+    <object class="result-page" id="resultPage" data="result.svg?v=1" type="image/svg+xml" aria-label="选择结果"></object>
+    <button class="result-back-hitbox" id="resultBack" type="button" aria-label="返回选择页面"></button>
+    <button class="result-repick-hitbox" id="resultRepick" type="button" aria-label="重选"></button>
+    <button class="result-share-hitbox" id="resultShare" type="button" aria-label="分享"></button>
+    <span class="counter-badge result-counter shared-counter" aria-hidden="true">9</span>
+    <object class="share-page" id="sharePage" data="result-share.svg?v=1" type="image/svg+xml" aria-label="分享结果"></object>
+    <span class="share-status-cover" aria-hidden="true"></span>
+    <button class="share-close-hitbox" id="shareClose" type="button" aria-label="关闭分享"></button>
+    <button class="share-friend-hitbox" id="shareFriend" type="button" aria-label="分享好友"></button>
+    <button class="save-local-hitbox" id="saveLocal" type="button" aria-label="保存本地"></button>
+    <section class="meme-overlay" id="memeOverlay" aria-label="分享表情包">
+      <img class="meme-image" id="memeImage" src="food-meme.jpg?v=1" alt="满肚子食物，人才不会空虚">
+      <button class="meme-close" id="memeClose" type="button">关闭</button>
+    </section>
+    <section class="exhausted-overlay" id="exhaustedOverlay" aria-label="次数已用完">
+      <img class="exhausted-image" src="no-chances-meme.jpg?v=1" alt="我真的没空陪你闹了">
+      <button class="exhausted-close" id="exhaustedClose" type="button">关闭</button>
+    </section>
+    <section class="loading-screen" id="loadingScreen" aria-label="正在加载" aria-live="polite">
+      <div class="letter-row">EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT</div>
+      <div class="letter-row">EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT</div>
+      <div class="letter-row">EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT</div>
+      <div class="letter-row">EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT</div>
+      <div class="letter-row">EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT</div>
+      <div class="letter-row">EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT</div>
+      <div class="letter-row">EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT</div>
+      <div class="letter-row">EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT</div>
+      <div class="letter-row">EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT&nbsp; EAT</div>
+    </section>
+  </main>
+  
+  <script src="app.js" defer></script>
+</body>
+</html>
